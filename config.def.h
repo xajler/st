@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -83,34 +83,36 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-unsigned int alpha = 0xcd;
+unsigned int alpha = 0xdd;
 
 static const char *colorname[] = {
 	/* 8 normal colors */
-    "#666666", /*  0 */
-    "#cc0000", /*  1 */
-    "#4e9a06", /*  2 */
-    "#c4a000", /*  3 */
-    "#3465a4", /*  4 */
-    "#75507b", /*  5 */
-    "#06989a", /*  6 */
-    "#d3d7cf", /*  7 */
-    
-	/* 8 bright colors */
-    "#88807c", /*  8 */
-    "#f15d22", /*  9 */
-    "#73c48f", /* 10 */
-    "#ffce51", /* 11 */
-    "#48b9c7", /* 12 */
-    "#ad7fa8", /* 13 */
-    "#34e2e2", /* 14 */
-    "#eeeeec", /* 15 */
+    "#1d1f21", /*  0 */
+    "#cc6666", /*  1 */
+    "#b5bd68", /*  2 */
+    "#f0c674", /*  3 */
+    "#81a2be", /*  4 */
+    "#b294bb", /*  5 */
+    "#8abeb7", /*  6 */
+    "#c5c8c6", /*  7 */
+
+       /* 8 bright colors */
+    "#969896", /*  8 */
+    "#cc6666", /*  9 */
+    "#b5bd68", /* 10 */
+    "#f0c674", /* 11 */
+    "#81a2be", /* 12 */
+    "#b294bb", /* 13 */
+    "#8abeb7", /* 14 */
+    "#ffffff", /* 15 */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */
-	"#00cc00", /* 257 -> fg */
+	"#50D950", /* 257 -> fg */
+	//"#00cc00", /* 257 -> fg */
+
     "magenta"  /* 258 -> cursor */
 };
 
@@ -194,6 +196,10 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,            	XK_j,   	    kscrolldown,    {.i =  1} },
 	{ MODKEY,	        	XK_u,		    kscrollup,      {.i = -1} },
 	{ MODKEY,		        XK_d,		    kscrolldown,    {.i = -1} },
+	{ MODKEY|ShiftMask,     XK_K,           zoom,           {.f = +1} },
+ 	{ MODKEY|ShiftMask,     XK_J,           zoom,           {.f = -1} },
+ 	{ MODKEY|ShiftMask,     XK_U,           zoom,           {.f = +2} },
+ 	{ MODKEY|ShiftMask,     XK_D,           zoom,           {.f = -2} },
 };
 
 /*
