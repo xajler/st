@@ -12,10 +12,12 @@ Forked from [https://github.com/shiva/st](https://github.com/shiva/st) for simpl
 
 ## My own additions
 
-+ Default font is system "mono" at 14pt
-+ Alt-k and Alt-j scroll back/foward in history one line at a time
++ Default font is "Noto Sans Mono" at 14pt
++ Alt-t and Alt-h scroll up/down in history one line at a time, for dvorak users.
++ Same as above for with shift for minimize/maximize text.
 + Alt-u and Alt-d scroll back/foward in history a page at a time
-+ Applied colors, insipred by Pop! OS colors.
++ Applied colors, Tommorow Night colors.
++ Using dvorak keys for t/h, instad of qwerty k/j. 
 
 ## Terminal-specific mappings
 
@@ -56,7 +58,7 @@ sudo make install
 
 ### Colorname
 
-+ Change `colorname[]` array values (88 LOC), default colours inspired by colors used in Pop! OS.
++ Change `colorname[]` array values (88 LOC), default colours are Tomorrow Night.
 + Numbers of 0 - 15 are usual terminal colors. Changed them to your liking.
 + Change `bg` to your desired terminal background color.
 + Change `fg` to your desired terminal foreground color.
