@@ -17,7 +17,6 @@ Forked from [https://github.com/shiva/st](https://github.com/shiva/st) for simpl
 + Same as above for with shift for minimize/maximize text.
 + Alt-u and Alt-d scroll back/foward in history a page at a time
 + Applied colors, Tommorow Night colors.
-+ Using dvorak keys for n/t, instad of qwerty k/j. 
 
 ## Terminal-specific mappings
 
@@ -39,7 +38,6 @@ Install code depndencies (voidlinux - most distro should have something similar)
 + `fontconfig-devel` 
 + `libX11-devel` 
 + `libXft-devel`
-
 
 ### Make & install
 
